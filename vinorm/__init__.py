@@ -6,7 +6,7 @@ def TTSnorm(text, punc = False, unknown = True, lower = True, rule = False ):
 
     #print(A)
     I=A+"/input.txt"
-    with open(I,"w+") as fw:
+    with open(I,"w+", encoding='utf-8') as fw:
         fw.write(text)
 
     myenv = os.environ.copy()
